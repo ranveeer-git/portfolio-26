@@ -12,7 +12,6 @@ let sending = false;
 if (directSending) {
   document.getElementById('contact-description').textContent = 'Tell me a little about what you have in mind. Your message will be sent directly to my inbox.';
   submitButton.textContent = 'Send message ↗';
-  form.querySelector('.form-note').textContent = 'Your contact details and message are sent through EmailJS to reach my inbox.';
 }
 
 document.querySelectorAll('[data-contact-open]').forEach(button => {
