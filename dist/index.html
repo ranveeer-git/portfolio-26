@@ -9,7 +9,7 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header><a class="brand" href="#">ranveer<span>®</span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#journey">Journey</a><a class="nav-contact" href="mailto:ranveersangwan22@gmail.com">Let’s talk <span>↗</span></a></nav></header>
+<header><a class="brand" href="#">ranveer<span>®</span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#journey">Journey</a><button class="nav-contact" type="button" data-contact-open>Let’s talk <span>↗</span></button></nav></header>
 <main id="main">
 <section class="hero wrap" aria-labelledby="hero-title">
 <div class="eyebrow"><span class="dot"></span> AI STUDENT · DEVELOPER · BUILDER</div>
@@ -17,7 +17,7 @@
 <div class="hero-bottom"><div><p>I’m Ranveer Sangwan. I build practical software at the intersection of AI, computer vision, and the web.</p><a class="button" href="#work">Explore my work <span>↘</span></a></div><div class="hero-note"><span class="mono">BASED IN</span><p>Pilani, Rajasthan<br>India <span class="orange">↗</span></p></div></div>
 <div class="hero-portrait"><img src="assets/ranveer-portrait.png" alt="Ranveer Sangwan wearing a navy suit" width="2536" height="3976" fetchpriority="high"></div>
 </section>
-<div class="ticker" aria-label="Areas of focus"><div>COMPUTER VISION <span>✳</span> MACHINE LEARNING <span>✳</span> FULL-STACK DEVELOPMENT <span>✳</span> APPLIED AI <span>✳</span></div></div>
+<div class="ticker" aria-label="Areas of focus"><div>FULL-STACK DEVELOPMENT <span>✳</span> APPLIED AI <span>✳</span></div></div>
 <section id="work" class="wrap section">
 <div class="section-top"><div><span class="mono muted">01 / SELECTED WORK</span><h2>Built to solve.<br>Designed to work.</h2></div><p>From recognizing faces to preparing for interviews — ideas turned into usable tools.</p></div>
 <div class="project-grid">
@@ -32,4 +32,17 @@
 <section class="wrap recognition"><span class="mono muted">A FEW MILESTONES</span><div class="awards"><article><span>↗</span><h3>2nd Runner-Up</h3><p>Beast Mode Hackathon<br>BKBIET, Pilani</p></article><article><span>✳</span><h3>Best Innovator</h3><p>BKBIET, Pilani</p></article><article><span>◎</span><h3>Programming certified</h3><p>C/C++ & Java · IIT Bombay<br>Spoken Tutorial Project</p></article><article><span>⌁</span><h3>Machine learning</h3><p>ML for Cyber Security<br>Codec Technology certification</p></article></div></section>
 <section id="contact" class="contact wrap"><span class="mono">04 / LET’S CONNECT</span><h2>Have something<br>in mind<span>?</span></h2><a class="email-link" href="mailto:ranveersangwan22@gmail.com">Let’s build a conversation. <span>↗</span></a><div class="contact-links"><a href="mailto:ranveersangwan22@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/ranveer-sangwan-16a608354/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ranveer6713" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></section>
 </main><footer class="wrap"><a class="brand" href="#">ranveer<span>®</span></a><span>Built with curiosity. © 2026 Ranveer Sangwan</span><a href="#">Back to top ↑</a></footer>
+<dialog id="contact-dialog" class="contact-dialog" aria-labelledby="contact-title" aria-describedby="contact-description">
+<button type="button" class="dialog-close" aria-label="Close contact form">×</button>
+<span class="mono muted">LET’S CONNECT</span><h2 id="contact-title">Start a conversation<span class="orange">.</span></h2>
+<p id="contact-description">Tell me a little about what you have in mind. Prepare a draft, then open it in your email app to send.</p>
+<form id="contact-form">
+<div class="form-row"><label>Your name<input name="name" autocomplete="name" required maxlength="100" placeholder="Alex Morgan"></label><label>Your email<input name="email" type="email" autocomplete="email" required maxlength="254" placeholder="alex@example.com"></label></div>
+<label>Subject<input name="subject" required maxlength="150" placeholder="A project, an opportunity, or just a hello"></label>
+<label>Message<textarea name="message" required maxlength="3000" rows="4" placeholder="I’d love to talk about…"></textarea></label>
+<button type="submit" class="button draft-button">Prepare email draft <span>↗</span></button>
+<div id="draft-result" class="draft-result" hidden><p role="status">Your draft is ready. Open it below and send it from your email app.</p><a id="email-draft" class="button" href="mailto:ranveersangwan22@gmail.com">Open email draft <span>↗</span></a></div>
+<p class="form-note">To: ranveersangwan22@gmail.com · A configured email app is required.</p>
+</form></dialog>
+<script src="contact.js" defer></script>
 </body></html>
