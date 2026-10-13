@@ -41,8 +41,9 @@
 <label>Subject<input name="subject" required maxlength="150" placeholder="A project, an opportunity, or just a hello"></label>
 <label>Message<textarea name="message" required maxlength="3000" rows="4" placeholder="I’d love to talk about…"></textarea></label>
 <button type="submit" class="button draft-button">Prepare email draft <span>↗</span></button>
+<p id="send-status" class="send-status" role="status" aria-live="polite" hidden></p>
 <div id="draft-result" class="draft-result" hidden><p role="status">Your draft is ready. Open it below and send it from your email app.</p><a id="email-draft" class="button" href="mailto:ranveersangwan22@gmail.com">Open email draft <span>↗</span></a></div>
 <p class="form-note">To: ranveersangwan22@gmail.com · A configured email app is required.</p>
 </form></dialog>
-<script src="contact.js" defer></script>
+<script src="contact.js" type="module"></script>
 </body></html>
