@@ -2,7 +2,7 @@
 
 Ranveer Sangwan's personal portfolio, showcasing practical AI, computer vision, and full-stack projects, experience, education, skills, and achievements.
 
-[Visit the portfolio](https://ranveer-sangwan-portfolio.tartscout16.chatgpt.site) (currently private; access requires the owner's account).
+[Visit the portfolio on GitHub Pages](https://ranveer6713.github.io/portfolio-26/).
 
 ## Features
 
@@ -44,4 +44,6 @@ The contact form uses EmailJS template variables `name`, `email`, `subject`, and
 
 ## Hosting
 
-The existing Sites deployment serves `dist` and is separate from this GitHub repository. Pushing to GitHub alone does not update the hosted portfolio. GitHub Pages or another static host can also serve the contents of `dist` after its own deployment setup.
+GitHub Pages publishes `dist` through `.github/workflows/pages.yml` on every push to `main`. Deployment progress is visible in the repository's Actions tab. Pages must use **GitHub Actions** as its publishing source.
+
+Allow `https://ranveer6713.github.io` in EmailJS domain settings for the contact form. The existing private Sites deployment is separate and does not update automatically from GitHub pushes.
