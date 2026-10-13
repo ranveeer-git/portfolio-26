@@ -2,7 +2,7 @@
 
 Ranveer Sangwan's personal portfolio, showcasing practical AI, computer vision, and full-stack projects, experience, education, skills, and achievements.
 
-[Visit the portfolio on GitHub Pages](https://ranveer6713.github.io/portfolio-26/).
+[Visit the portfolio on GitHub Pages](https://ranveeer-git.github.io/portfolio-26/).
 
 ## Features
 
@@ -46,4 +46,4 @@ The contact form uses EmailJS template variables `name`, `email`, `subject`, and
 
 GitHub Pages publishes `dist` through `.github/workflows/pages.yml` on every push to `main`. Deployment progress is visible in the repository's Actions tab. Pages must use **GitHub Actions** as its publishing source.
 
-Allow `https://ranveer6713.github.io` in EmailJS domain settings for the contact form. The existing private Sites deployment is separate and does not update automatically from GitHub pushes.
+Allow `https://ranveeer-git.github.io` in EmailJS domain settings for the contact form. The existing private Sites deployment is separate and does not update automatically from GitHub pushes.
