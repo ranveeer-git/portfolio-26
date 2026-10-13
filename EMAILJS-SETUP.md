@@ -1,6 +1,6 @@
 # Enable direct contact messages
 
-The integration is prepared but direct sending stays off until all three public identifiers in `dist/emailjs-config.mjs` are filled in. The deployed version continues to offer email drafts until activation and deployment.
+Direct sending is configured for this portfolio. When reusing the source, replace all three public identifiers in `dist/emailjs-config.mjs` with your own EmailJS settings. If any identifier is empty, the form falls back to preparing an email draft.
 
 1. Create an EmailJS account at https://dashboard.emailjs.com/ and connect a service in Email Services.
 2. Create a Contact Us template with these settings:
