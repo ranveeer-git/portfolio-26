@@ -145,17 +145,22 @@ footer nav{order:3;flex-basis:100%;flex-wrap:wrap}
   gap: 8px;
 }
 .project-filters button {
+  appearance: none;
   padding: 7px 14px;
-  border: 1px solid var(--line);
+  border: 1px solid #797d74;
   border-radius: 2px;
-  background: transparent;
+  background: var(--panel);
   color: var(--text);
-  font-size: 13px;
+  font-size: 14px;
+}
+.project-filters button:is(:hover, :focus-visible) {
+  border-color: var(--orange);
 }
 .project-filters button[aria-pressed="true"] {
   border-color: var(--orange);
-  color: var(--orange);
-  background: var(--panel);
+  color: var(--bg);
+  background: var(--orange);
+  font-weight: 600;
 }
 .project-count:not(:empty) {
   margin: 12px 0 18px;
