@@ -10,8 +10,8 @@ const submitButton = form.querySelector('[type="submit"]');
 const status = document.getElementById('send-status');
 let sending = false;
 if (directSending) {
-  document.getElementById('contact-description').textContent = 'Tell me a little about what you have in mind. Your message will be sent directly to my inbox.';
-  submitButton.textContent = 'Send message ↗';
+  document.getElementById('contact-description').textContent = 'Send a project enquiry or collaboration message.';
+  submitButton.textContent = 'Send message';
 }
 
 document.querySelectorAll('[data-contact-open]').forEach(button => {
@@ -53,7 +53,7 @@ form.addEventListener('submit', async event => {
     try {
       await sendMessage(emailjsConfig, { name, email, subject, message });
       form.reset();
-      status.textContent = 'Message sent. Thanks for reaching out!';
+      status.textContent = 'Message sent. Thank you for contacting me.';
       status.dataset.state = 'success';
     } catch (error) {
       status.textContent = error.message;
@@ -62,7 +62,7 @@ form.addEventListener('submit', async event => {
       sending = false;
       controls.forEach(control => { control.disabled = false; });
       form.removeAttribute('aria-busy');
-      submitButton.textContent = 'Send message ↗';
+      submitButton.textContent = 'Send message';
     }
     return;
   }
